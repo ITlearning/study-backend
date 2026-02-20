@@ -73,7 +73,7 @@ questions:
 
 Create a Markdown note with the structure below.
 
-File path: `study-ios/notes/YYYY-MM-DD-<topic-in-english>.md`
+File path: `study-backend/notes/YYYY-MM-DD-<topic-in-english>.md`
 
 **Note structure:**
 
@@ -116,31 +116,15 @@ File path: `study-ios/notes/YYYY-MM-DD-<topic-in-english>.md`
 
 ### Step 4: Save Note
 
-Use the Write tool to save the note to the `study-ios/notes/` directory.
+Use the Write tool to save the note to the `study-backend/notes/` directory.
 
-### Step 5: Update Learning Progress
-
-Record learning progress in memory using `mcp__plugin_everything-claude-code-ios_memory__create_entities` or `mcp__plugin_everything-claude-code-ios_memory__add_observations`:
-
-- Entity: "BackendLearningProgress"
-- Observations: topic studied, date, level, weak areas
-
-Example:
-```
-entity: BackendLearningProgress
-observations:
-  - "2024-01-15: Spring Transaction Management - completed (beginner-intermediate)"
-  - "Weak area: propagation types"
-```
-
-### Step 6: Wrap Up
+### Step 5: Wrap Up
 
 After saving, inform the user:
 
 ```
 Notes saved: notes/YYYY-MM-DD-<topic>.md
 
-Progress recorded.
 - Completed: <topic>
 - Next suggestion: <next topic>
 
@@ -152,5 +136,4 @@ Continue learning with /backend-study, or review with /backend-quiz.
 1. **Use the selected language** - from Step 0. Only code in English.
 2. **Keep it concise** - core ideas only, no long-winded explanations
 3. **Review questions required** - at least 3 self-check questions
-4. **Progress tracking required** - always save learning history to memory
-5. **No emojis** - clean Markdown only
+4. **No emojis** - clean Markdown only
